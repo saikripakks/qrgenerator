@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // class is a blue print
+        class IDModel {
+            constructor(username,userage,userrollno) {
+                this.Name=username;
+                this.Age=userage;
+                this.Rollno=userrollno;
+            }
+            printId(){
+                // document.writeln("Name is" + this.Name+"Age is" + this.Age + "and the Roll number is" + this.Rollno)
+                document.writeln(`Name is ${this.Name},Age is ${this.Age} and the roll number is ${this.Rollno}`)
+            }
+        }
+        let KripaID= new IDModel("Saikripa",25,"A5001");
+        let BharaniID= new IDModel("Bharani",25,"A5002");
+        KripaID.printId();
+        BharaniID.printId();
+    </script>
+</body>
+</html>
